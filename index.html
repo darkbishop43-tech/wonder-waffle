@@ -15,6 +15,26 @@ section{padding:78px 0}.head{display:flex;justify-content:space-between;align-it
 footer{padding:42px 0;background:#030a13}.foot{display:flex;justify-content:space-between;gap:30px}.footlogo{width:115px}.foot p{color:#9db0c5;font-size:13px;line-height:1.8}.credit{border-top:1px solid #ffffff17;margin-top:28px;padding-top:18px;color:#71859b;font-size:12px}
 @media(max-width:800px){.links a:not(.pill){display:none}.navin{height:70px}.logo{width:88px;height:62px}.hero{min-height:790px;align-items:start}.heroCopy{width:100%;padding-top:55px}.hero h1{font-size:55px}.foodstage{width:100%;height:430px;right:-5%;bottom:30px}.waffle{width:55%;right:25%}.truck{width:72%;right:-4%;bottom:0}.berry{width:40px}.statusgrid,.feature,.schedule{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.featurepic{order:-1;min-height:350px}.featuretxt{padding:30px}.head{align-items:start;flex-direction:column}.foot{flex-direction:column}}
 @media(max-width:500px){.cards{grid-template-columns:1fr}.hero h1{font-size:48px}.hero p{font-size:16px}.foodstage{height:390px}.waffle{width:65%;right:20%}.truck{width:86%}.card img{height:245px}}
+</style><style>
+/* Mobile-first repair — hero content and food art never collide */
+@media(max-width:800px){
+  .navin{height:64px}.logo{width:62px;height:54px}.links{gap:8px}.links .pill{padding:10px 12px;font-size:12px}
+  .hero{min-height:auto;display:block;padding-bottom:0;overflow:hidden}
+  .hero .wrap{width:100%}.heroCopy{width:92%;margin:auto;padding:48px 0 28px;position:relative;z-index:12}
+  .hero h1{font-size:clamp(48px,14vw,68px);line-height:.9;margin:12px 0 22px}
+  .hero p{font-size:17px;line-height:1.55;max-width:none;margin:0}
+  .actions{margin-top:22px;gap:10px}.actions .pill,.actions .outline{padding:13px 16px;font-size:14px}
+  .foodstage{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;width:100%!important;height:340px!important;margin-top:4px;background-position:center!important;background-size:cover!important}
+  .foodstage:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--ink) 0%,transparent 24%,transparent 82%,var(--ink) 100%);pointer-events:none}
+  .berry{width:42px}.b1{right:57%;top:20%}.b2{right:38%;top:29%}.b3{right:53%;top:45%}.b4{right:32%;top:52%}
+  .drizzle{right:18%;top:14%;width:65%;height:55%}.drop{right:34%;top:61%}
+  .status{margin-top:-8px}.statusgrid{border-radius:18px;padding:20px;gap:18px}
+}
+@media(max-width:480px){
+  .heroCopy{padding-top:38px}.hero h1{font-size:52px}.hero p{font-size:16px}
+  .foodstage{height:290px!important}.actions{display:grid;grid-template-columns:1fr 1fr}.actions a{width:100%;text-align:center}
+  .status{width:92%;margin-top:-4px}.statusgrid{display:block}.statusgrid>div{margin-bottom:20px}.statusgrid .pill{width:100%}
+}
 </style></head><body>
 <nav class="nav"><div class="wrap navin"><img class="logo" alt="Wonder Waffle official logo" src="https://images.squarespace-cdn.com/content/v1/687ada0053aef74f992970cc/2dafe358-b4de-4110-99bf-956649d483d3/WonderWaffle%2BMain%2BLogo.png"><div class="links"><a href="#menu">Menu</a><a href="#schedule">Schedule</a><a href="#find">Find Us</a><a href="#catering">Catering</a><a class="pill" href="#find">📍 Today's Location</a></div></div></nav>
 <header class="hero"><div class="wrap"><div class="heroCopy"><div class="eyebrow">🧇 FLORENCE, SC • FAMILY OWNED FOOD TRUCK</div><h1>FIND YOUR <span>WONDER.</span></h1><p>Fresh bubble waffles, wild toppings, colorful drinks and the kind of treats that turn an ordinary day into a really good one.</p><div class="actions"><a class="pill" href="#menu">🍴 Explore the Menu</a><a class="outline" href="#find">📍 Find the Truck</a></div></div></div>
